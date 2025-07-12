@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+
+     <link rel="icon" type="image/jpg" href="images/icon1.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section id="games">
+      <header></header>
+
+      <!-- Navigation -->
+      <nav id="nav" class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container p-2 px-4 rounded-5">
+          <a class="navbar-brand d-flex justify-content-center" href="#">
+            <img
+              src="images/logo-sm.png"
+              alt="Logo"
+              width="60"
+              height="35"
+              class="d-inline-block align-self-center"
+            />
+            <h1 class="ms-2 fs-4">Game Reviews</h1>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- 🛠️ FIXED: Removed extra double quote (syntax error) -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active navItem" href="#">ALL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navItem" href="#">MMORPG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navItem" href="#">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navItem" href="#">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navItem text-uppercase" href="#"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navItem text-uppercase" href="#"
+                  >superhero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navItem text-uppercase" href="#">pixel</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Games Section -->
+      <div class="container games">
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4"
+          id="gamesBody"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Game Details Section -->
+    <section class="text-white d-none" id="details">
+      <div class="container-fluid p-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="p-3">Details Game</h1>
+          <a href="#" class="bg-white rounded-5" id="closeD">
+            <i class="fa-solid fa-x"></i>
+          </a>
+        </div>
+        <div class="row" id="gameDetails"></div>
+      </div>
+    </section>
+
+    <!-- Loading Section -->
+    <section class="loading d-none" id="loading">
+      <span class="loader"></span>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
